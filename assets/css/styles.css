@@ -1,0 +1,137 @@
+/*styles*/
+
+body{
+    font-family:victoria;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    background-image: url(../images/image2.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+
+.nav-container{
+    margin: 0;
+    height: 10vh;
+    padding: 1em;
+    transition: all ease-in-out .5s;
+}
+
+
+.inter{
+    width: 50%;
+    margin: 1em auto;
+    background-color: rgb(3, 125, 129);
+    font-size: 200%;
+    color: white;
+    border: 20px;
+    height: 80vh;
+}
+.inside{
+    padding: 3em;
+}
+
+
+.moveRight{
+    float: right;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-size:16px;
+    padding: 0.5em;
+}
+.nav-container:hover{
+    background-color: white;
+}
+
+.nav-container:hover .links{
+   
+    color: black;
+}
+
+.nav-container:hover .brand{
+    color: black;
+}
+
+.brand{
+    color: white;
+    font-size: 35px;
+    margin-right: 2%;
+}
+
+
+.btn{
+    color:black;
+    font-weight: 500;
+    padding: 0.7em 22px;
+    transition: all ease-in-out .2s;
+    border-radius: 20px;
+    border: 0;
+    background-color: white;
+    text-transform: capitalize;
+    transition: all cubic-bezier(0.58, 0.09, 1, 1) .2s;
+    font-size: 15px;
+    animation-name: shake;
+    animation-duration: 5000ms;
+    animation-delay: 5000ms;
+    font-family: victoria;
+}
+
+@keyframes shake{
+    0%{
+        opacity:0;
+        transform: scale(0);
+    }
+    30%{
+        opacity: 1;
+        margin-top: 10em;
+        
+    }
+    40%{
+        background-color: red;
+margin-right: 10em;
+    }
+    100%{
+        background-color: pink;
+        margin-right: 0;
+    }
+
+    
+} 
+.btn:hover{
+    background-color: darkcyan;
+    color: white;
+    
+    
+    
+
+}
+@font-face{
+    font-family: victoria;
+    src:url(../fonts/DODGE.ttf);
+}
+button{
+    cursor: pointer;
+}
+
+.bn{
+    margin: 16px 0;
+    background-color: white;
+    color: darkcyan;
+    text-align: center;
+    padding: 2% 10%;
+    border: 0;
+    font-size: 19px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-family: victoria;
+    transition: all cubic-bezier(0.58, 0.09, 1, 1) .2s;
+
+}
+.bn:hover{
+    background-color: rgb(2, 100, 100);
+    color: white;
+}
